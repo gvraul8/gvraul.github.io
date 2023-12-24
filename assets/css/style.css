@@ -517,7 +517,7 @@ section {
 }
 
 .section {
-  width: 100%; /* Ocupa el ancho completo en dispositivos pequeños */
+  width: 100%; 
   margin-bottom: 20px;
 }
 
@@ -526,9 +526,8 @@ section {
 }
 
 @media (min-width: 768px) {
-  /* Estilos para pantallas más grandes (tabletas, computadoras) */
   .section {
-    width: 30%; /* Ajusta según sea necesario */
+    width: 30%; 
   }
 }
 
@@ -599,9 +598,9 @@ section {
 
 /* Estilo para la imagen */
 .image-container img {
-  width: 90px;
+  width: 60px;
   display: block;
-  max-width: 90px;
+  max-width: 60px;
 }
 
 /* Estilo para el texto debajo de la imagen */
