@@ -44,37 +44,48 @@
   /**
    * Navbar links active state on scroll
    */
-  const navbarlinks = select('#navbar .scrollto', true);
+  const navbarlinks = document.querySelectorAll('#navbar .scrollto');
 
   const navbarlinksActive = () => {
     const position = window.scrollY + 200;
     const windowHeight = window.innerHeight;
     const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
   
+    let isContactSectionVisible = false;
+  
     navbarlinks.forEach(navbarlink => {
       if (!navbarlink.hash) return;
-      const section = select(navbarlink.hash);
-      if (!section) return;
+      const targetSection = document.querySelector(navbarlink.hash);
   
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+      if (!targetSection) return;
+  
+      const sectionTop = targetSection.offsetTop;
+      const sectionBottom = sectionTop + targetSection.offsetHeight;
+  
+      if (position >= sectionTop && position <= sectionBottom) {
+        navbarlinks.forEach(link => link.classList.remove('active'));
         navbarlink.classList.add('active');
-      } else {
-        navbarlink.classList.remove('active');
-      }
   
-      // Comprobar si estamos al final de la página
-      if (position + windowHeight >= documentHeight) {
-        navbarlink.classList.remove('active');
-        // Agregar la clase 'active' al enlace de la sección de contacto
+        // Verificar si es la sección de contacto
         if (navbarlink.hash === '#contact') {
-          navbarlink.classList.add('active');
+          isContactSectionVisible = true;
         }
       }
     });
+  
+    // Marcar la sección de contacto si estamos al final de la página y no se ha marcado otra sección
+    if (!isContactSectionVisible && position + windowHeight >= documentHeight) {
+      navbarlinks.forEach(link => link.classList.remove('active'));
+      const contactLink = document.querySelector('#contact-link');
+      if (contactLink) {
+        contactLink.classList.add('active');
+      }
+    }
   };
   
   window.addEventListener('load', navbarlinksActive);
-  onscroll(document, navbarlinksActive);
+  window.addEventListener('scroll', navbarlinksActive);
+  
   
   /**
    * Scrolls to an element with header offset

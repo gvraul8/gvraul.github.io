@@ -585,8 +585,6 @@ section {
 
 /* ------------   IMAGEN Y GRAFICO    ----------- */
 
-
-/* Estilo para el contenedor de cada conjunto */
 .content2 {
   display: flex;
   align-items: center;
@@ -631,8 +629,8 @@ section {
   font-size: 25px;
   font-weight: bold;
   font-family: sans-serif;
-  margin-left: -100px; /* Ajusta el margen izquierdo entre el texto y el gráfico */
-  margin-right: 20px; /* Añade margen a la derecha del gráfico */
+  margin-left: -100px; 
+  margin-right: 20px; 
   margin-top: 30px;
 }
 
@@ -675,6 +673,7 @@ section {
 body {
   background: #f2f2f2;
 }
+
 
 /*--------------------------------------------------------------
 # Formation
@@ -1175,12 +1174,13 @@ body {
   margin-top: 20px; /* Reduce el espacio superior entre los bloques de información */
 }
 
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
+.contact .info .icon:hover i {
   background: #082b4a;
   color: #fff;
 }
+
+
+
 
 
 /*--------------------------------------------------------------
