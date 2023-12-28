@@ -116,7 +116,4 @@ if (proyectoSeleccionado && proyectos[proyectoSeleccionado]) {
     proyecto.imagenes,
     proyecto.githubLink
   );
-} else {
-  // Manejar el caso cuando no se proporciona un proyecto válido
-  console.error("Proyecto no válido.");
-}
+} 
