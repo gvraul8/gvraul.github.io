@@ -96,9 +96,9 @@ const proyectos = {
     titulo: "ESI Travel",
     descripcion: "Aplicación web realizada con HTML y CSS para el front-end y Python para el back-end, en la cuál se ha implementado un sistema de registro y login para los usuarios, así como un sistema de reservas de vuelos y hoteles, obteniendo los datos de dos APIs. Proyecto realizado en colaboración con Pedro Campos y Raúl Calzado.",
     imagenes: [
-      "assets/img/portfolio/ESItravel.png",
-      "assets/img/portfolio/ESItravel2.png",
-      "assets/img/portfolio/ESItravel3.png",
+      "assets/img/portfolio/ESITravel.png",
+      "assets/img/portfolio/ESITravel2.png",
+      "assets/img/portfolio/ESITravel3.png",
     ],
     githubLink: "https://github.com/pedroocampos/isi-ESI-Travel.git",
   },
