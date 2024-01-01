@@ -70,7 +70,7 @@ const proyectos = {
       "assets/img/portfolio/IPOkemon1.png",
       "assets/img/portfolio/IPOkemon2.png",
     ],
-    githubLink: "https://github.com/tuusuario/proyecto2",
+    githubLink: "https://github.com/gvraul8/IPOkemon_grupal",
   },
   pokemon: {
     titulo: "Pokemon Wartortle",

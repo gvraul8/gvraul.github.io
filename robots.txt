@@ -1,0 +1,10 @@
+Sitemap: https://gvraul8.github.io/sitemap.xml
+
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /scss/
+Disallow: /vendor/
+Disallow: /img/
+Disallow: /gulpfile.js
+Disallow: /README.md
