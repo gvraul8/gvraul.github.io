@@ -747,6 +747,11 @@ body {
   background-size: 100% 100%;
 }
 
+.formation .formation-item.global-suite::before {
+  background: url("../img/globalsuite_logo.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+
 .formation .formation-item.compra-ideal::before {
   background: url("../img/logo_Ventadecolchones.png") center center no-repeat;
   background-size: 100% 100%;
@@ -756,6 +761,12 @@ body {
   background: url("../img/logo_CAMBRIDGE.png") center center no-repeat;
   background-size: 100% 100%;
 }
+
+.formation .formation-item.afal::before {
+  background: url("../img/logo-afal.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+
 
 #formation .link {
   color: #0563bb;
