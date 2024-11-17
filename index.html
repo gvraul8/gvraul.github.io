@@ -16,7 +16,7 @@
 
   <title>Raul Gonzalez Velazquez</title>
   <meta name="description" content="Bienvenido al sitio web oficial de Raúl González Velázquez, Ingeniero Informático. Explora mi perfil profesional, proyectos y más.">
-  <meta name="keywords" content="Raúl González Velázquez, gvraul8, RaulGV, raulgv, Raul Gonzalez, Ingeniero Infomático">
+  <meta name="keywords" content="Raúl González Velázquez, gvraul8, RaulGV, raulgv, Raul Gonzalez, Ingeniero Infomático, Software Developer, Software Developer Junior">
 
 
   <!-- Favicons -->
@@ -35,6 +35,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -52,13 +54,13 @@
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mí</span></a></li>
-        <li><a href="#formation" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Formación</span></a>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span data-i18n='about'>Sobre mí</span></a></li>
+        <li><a href="#formation" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span data-i18n='education'>Formación</span></a>
         </li>
-        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Habilidades</span></a>
+        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span data-i18n='skills'>Habilidades</span></a>
         </li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Portfolio</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-server"></i> <span data-i18n='portfolio'>Portfolio</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span data-i18n='contact_ico'>Contacto</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -66,15 +68,35 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Raúl González Velázquez</h1>
-      <p>Soy <span class="typed" data-typed-items="Ingeniero Infomático"></span></p>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/gvraul8" class="linkedin" target="_blank" title="Perfil de LinkedIn de Raúl González"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/gvraul8" class="github" target="_blank" title="Perfil de GitHub de Raúl González"><i class="bx bxl-github"></i></a>
-        <a href="mailto:gvraul8@gmail.com" class="email" title="Email de Raúl González"><i class="bi bi-envelope"></i></a>
+    <div class="language-switcher">
+      <div class="dropdown">
+        <!-- El contenido del botón se actualizará dinámicamente -->
+        <button class="language-btn" id="language-dropdown" data-lang="es">
+          <img src="assets/img/languages/spain.png" alt="Español" class="flag-icon"> ES
+        </button>
+        <div class="dropdown-content">
+          <button class="language-option" data-lang="es">
+            <img src="assets/img/languages/spain.png" alt="Español" class="flag-icon"> ES
+          </button>
+          <button class="language-option" data-lang="en">
+            <img src="assets/img/languages/United-kingdom.png" alt="English" class="flag-icon"> EN
+          </button>
+        </div>
       </div>
-      <a href="CV_RaulGonzalez.pdf" download class="download-button" title="Descargar el currículum de Raúl González">Descarga mi CV</a>
+    </div>
+    
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 data-i18n="hero_title">Raúl González Velázquez</h1>
+      <p>
+        <span data-i18n="hero_description" style="color: #45505b;">Soy</span>
+        <span class="typed" data-lang-es="Ingeniero Informático" data-lang-en="Computer Engineer" data-typed-items="Ingeniero Informático"></span>
+      </p>         
+      <div class="social-links">
+        <a data-i18n='linkedin' href="https://linkedin.com/in/gvraul8" class="linkedin" target="_blank" title="Perfil de LinkedIn de Raúl González"><i class="bx bxl-linkedin"></i></a>
+        <a data-i18n='github' href="https://github.com/gvraul8" class="github" target="_blank" title="Perfil de GitHub de Raúl González"><i class="bx bxl-github"></i></a>
+        <a data-i18n='email' href="mailto:gvraul8@gmail.com" class="email" title="Email de Raúl González"><i class="bi bi-envelope"></i></a>
+      </div>
+      <a data-i18n='download_cv' href="CV_RaulGonzalez.pdf" download class="download-button" title="Descargar el currículum de Raúl González">Descarga mi CV</a>
     </div>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -94,8 +116,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Sobre mí</h2>
-          <p>
+          <h2 data-i18n='about_title'>Sobre mí</h2>
+          <p data-i18n='about_paragraph'>
             ¡Hola! Soy Raúl González Velázquez, graduado en el grado de Ingeniería Informática en la
             <a href="https://esi.uclm.es/" class="link" target="_blank">Escuela Superior de Informática de Ciudad
               Real</a>,
@@ -113,8 +135,8 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid small-image" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Intensificación en Tecnologías de la Información</h3>
-            <p style="text-align: justify">
+            <h3 data-i18n='about_subtitle'>Intensificación en Tecnologías de la Información</h3>
+            <p data-i18n='about_description' style="text-align: justify">
               Durante mi formación, he adquirido una sólida base en diferentes áreas de la informática. Mis principales
               habilidades se centran en el desarrollo de software. Además, me considero una persona apasionada por el
               aprendizaje
@@ -124,9 +146,9 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Fecha de nacimiento:</strong> <span>27 de agosto de
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n='date'>Fecha de nacimiento:</strong> <span data-i18n='birthdate'>27 de agosto de
                       2002</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Ciudad Real, España </span>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n='city'>Ciudad:</strong> <span data-i18n='cityCR'>Ciudad Real, España </span>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>gvraul8&commat;gmail.com </span>
 
                   </li>
@@ -134,8 +156,8 @@
               </div>
             </div>
 
-            <a href="CV_RaulGonzalez.pdf" class="download-button" target="_blank" title="Descargar el currículum de Raúl González">Descarga mi CV</a>
-            <a href="mailto:gvraul8@gmail.com" class="download-button" title="Contactar con Raúl González">Contáctame</a>
+            <a data-i18n='download_cv_2' href="CV_RaulGonzalez.pdf" class="download-button" target="_blank" title="Descargar el currículum de Raúl González">Descarga mi CV</a>
+            <a data-i18n='contact' href="mailto:gvraul8@gmail.com" class="download-button" title="Contactar con Raúl González">Contáctame</a>
 
           </div>
         </div>
@@ -148,130 +170,84 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Formación</h2>
-          <p>La formación es la base de la innovación, ya que proporciona a las personas las herramientas necesarias
+          <h2 data-i18n='formation_title'>Formación</h2>
+          <p data-i18n='formation_description'>La formación es la base de la innovación, ya que proporciona a las personas las herramientas necesarias
             para generar nuevas ideas y soluciones.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6">
-            <h3 class="formation-title">Formación</h3>
+            <h3 class="formation-title" data-i18n="formation">Formación</h3>
             <div class="formation-item uclm">
-              <h4>Grado en Ingeniería Informática</h4>
+              <h4 data-i18n="degree_title">Grado en Ingeniería Informática</h4>
               <h5>2020 - 2024</h5>
-              <p><em><a href="https://www.uclm.es/" class="link" target="_blank">
-                    Universidad de Castilla-La Mancha, España </a></em></p>
-              <p>Grado en Ingeniería Informática en el <a href="https://esi.uclm.es/" class="link" target="_blank">
-                  campus de Ciudad Real</a> con intensificación en Tecnologías de la
-                Información</p>
+              <p><em><a href="https://www.uclm.es/" class="link" target="_blank" data-i18n="degree_university">Universidad de Castilla-La Mancha, España</a></em></p>
+              <p data-i18n="degree_description">Grado en Ingeniería Informática en el <a href="https://esi.uclm.es/" class="link" target="_blank">campus de Ciudad Real</a> con intensificación en Tecnologías de la Información</p>
             </div>
             <div class="formation-item bachillerato">
-              <h4>Bachillerato Tecnológico</h4>
+              <h4 data-i18n="highschool_title">Bachillerato Tecnológico</h4>
               <h5>2018 - 2020</h5>
-              <p><em>IES Berenguela de Castilla, Bolaños de Calatrava</em></p>
-              <p>Modalidad de Ciencias y Tecnologías</p>
+              <p><em data-i18n="highschool_location">IES Berenguela de Castilla, Bolaños de Calatrava</em></p>
+              <p data-i18n="highschool_modality">Modalidad de Ciencias y Tecnologías</p>
             </div>
           </div>
-
+        
           <div class="col-lg-6">
-            <h3 class="formation-title">Experiencia profesional</h3>
+            <h3 class="formation-title" data-i18n="professional_experience">Experiencia profesional</h3>
             <div class="formation-item global-suite">
-              <h4>Software Developer Junior</h4>
-              <h5>Ago 2024 - Act</h5>
+              <h4 data-i18n="software_developer">Software Developer Junior</h4>
+              <h5 data-i18n="date_gs_1">Ago 2024 - Act</h5>
               <p><em>GlobalSuite Solutions</em></p>
               <ul>
-                <li>Desarrollo de funcionalidades para proyectos de la empresa</li>
-                <li>Mejora de procesos utilizando tecnologías como Node, React, Kafka y MongoDB</li>
-                <li>Participación en el ciclo completo de desarrollo de software (front-end y back-end)</li>
+                <li data-i18n="task_1">Desarrollo de funcionalidades para proyectos de la empresa</li>
+                <li data-i18n="task_2">Mejora de procesos utilizando tecnologías como Node, React, Kafka y MongoDB</li>
+                <li data-i18n="task_3">Participación en el ciclo completo de desarrollo de software (front-end y back-end)</li>
               </ul>
             </div>
             
             <div class="formation-item global-suite">
-              <h4>Desarrollador Full-stack (Prácticas)</h4>
+              <h4 data-i18n="full_stack_intern">Desarrollador Full-stack (Prácticas)</h4>
               <h5>Feb 2024 - Jul 2024</h5>
               <p><em>GlobalSuite Solutions</em></p>
-              <p>Realización de un programa <a href="https://esi.uclm.es/index.php/programas-singulares/programa-forte/" class="link" target="_blank">FORTE</a> (prácticas curriculares + TFG) en <a href="https://www.globalsuitesolutions.com/es/" class="link" target="_blank">GlobalSuite Solutions</a>.</p>
+              <p data-i18n="program_description">Realización de un programa <a href="https://esi.uclm.es/index.php/programas-singulares/programa-forte/" class="link" target="_blank" data-i18n="forte_program">FORTE</a> (prácticas curriculares + TFG) en <a href="https://www.globalsuitesolutions.com/es/" class="link" target="_blank" data-i18n="company">GlobalSuite Solutions</a>.</p>
               <ul>
-                <li>Desarrollo back-end con Node y NestJS</li>
-                <li>Desarrollo front-end con React y NextJS</li>
-                <li>Uso de tecnologías como Kafka, GitLab y bases de datos no relacionales como MongoDB</li>
+                <li data-i18n="backend_development">Desarrollo back-end con Node y NestJS</li>
+                <li data-i18n="frontend_development">Desarrollo front-end con React y NextJS</li>
+                <li data-i18n="tech_stack">Uso de tecnologías como Kafka, GitLab y bases de datos no relacionales como MongoDB</li>
               </ul>
             </div>
-            
-
+        
             <div class="formation-item compra-ideal">
-              <h4>Desarrollador Full-stack</h4>
+              <h4 data-i18n="full_stack_intern_2">Desarrollador Full-stack</h4>
               <h5>Jul 2023 - Sep 2023</h5>
-              <p><em>Compra Ideal SL, Pozuelo de Calatrava </em></p>
-              <p>Prácticas extracurriculares en una reconocida empresa de comercio electrónico dedicada a la fabricación
-                de artículos de descanso <a href="https://ventadecolchones.com/" class="link" target="_blank">
-                  (ventadecolchones.com)</a>.</p>
+              <p><em data-i18n="company_2">Compra Ideal SL, Pozuelo de Calatrava</em></p>
+              <p data-i18n="ecommerce_description">Prácticas extracurriculares en una reconocida empresa de comercio electrónico dedicada a la fabricación de artículos de descanso <a href="https://ventadecolchones.com/" class="link" target="_blank" data-i18n="ecommerce_link">(ventadecolchones.com)</a>.</p>
               <ul>
-                <li> Desarrollo backend con PHP y Java</li>
-                <li> Uso de tecnologías front-end como HTML, CSS, JavaScript, jQuery </li>
-                <li> Escritura de consultas optimizadas para bases de datos relacionales (mySQL)</li>
+                <li data-i18n="backend_php_java">Desarrollo backend con PHP y Java</li>
+                <li data-i18n="frontend_tech">Uso de tecnologías front-end como HTML, CSS, JavaScript, jQuery</li>
+                <li data-i18n="database_queries">Escritura de consultas optimizadas para bases de datos relacionales (mySQL)</li>
               </ul>
             </div>
           </div>
-
-
+        
           <div class="col-lg-6">
-            <h3 class="formation-title">Certificados</h3>
+            <h3 class="formation-title" data-i18n="certificates_title">Certificados</h3>
             <div class="formation-item english-level">
-              <h4>English level B1</h4>
+              <h4 data-i18n="english_level">English level B1</h4>
               <h5>Sep 2019</h5>
               <p><em>Cambridge University Press & Assessment</em></p>
             </div>
           </div>
-
+        
           <div class="col-lg-6">
-            <h3 class="formation-title">Voluntariado</h3>
+            <h3 class="formation-title" data-i18n="volunteering_title">Voluntariado</h3>
             <div class="formation-item afal">
-              <h4>AFAL Bolaños</h4>
-              <h5>Ene 2024 - Act</h5>
-              <p><em>Desarrollo y colaboración de forma activa y profesional en el mantenimiento
-                y actualización de funciones para la solución web de la Asociación
-                de Familiares de enfermos de ALzheimer y otras demencias <a href="https://afalbolanos.es/" class="link" target="_blank" >
-                AFAL Bolaños</a>.</em></p>
+              <h4 data-i18n="afal_volunteering">AFAL Bolaños</h4>
+              <h5 data-i18n="afal_date">Ene 2024 - Act</h5>
+              <p><em data-i18n="volunteering_description">Desarrollo y colaboración de forma activa y profesional en el mantenimiento y actualización de funciones para la solución web de la Asociación de Familiares de enfermos de ALzheimer y otras demencias <a href="https://afalbolanos.es/" class="link" target="_blank" data-i18n="afal_link">AFAL Bolaños</a>.</em></p>
             </div>
           </div>
-          <!--
-        <div class="col-lg-6">
-          <h3 class="formation-title">Formación complementaria</h3>
-          <div class="formation-item">
-            <h4>Competencia para la gestión de equipos - Resolución de conflictos</h4>
-            <h5>Febrero 2021. 15 horas</h5>
-            <p><em>Universidad de Castilla-La Mancha</em></p>
-          </div>
-          <div class="formation-item">
-            <h4>Competencia para el emprendimiento - Emprendimiento</h4>
-            <h5>Junio 2021. 25 horas</h5>
-            <p><em>Universidad de Castilla-La Mancha</em></p>
-          </div>
-          <div class="formation-item">
-            <h4>Competencias Informacionales y digitales - Aprendizaje en la búsqueda y uso de la información</h4>
-            <h5>Septiembre 2021. 25 horas</h5>
-            <p><em>Universidad de Castilla-La Mancha</em></p>
-          </div>
-          <div class="formation-item">
-            <h4>LaTeX esencial para preparación de Trabajo Fin de Grado, Tesis y otros documentos académicos</h4>
-            <h5>Febrero 2023. 20 horas</h5>
-            <p><em>Universidad de Castilla-La Mancha</em></p>
-          </div>
-          <div class="formation-item">
-            <h4>Competencia para el aprendizaje autónomo - Autocoaching</h4>
-            <h5>Mayo 2023. 15 horas</h5>
-            <p><em>Universidad de Castilla-La Mancha</em></p>
-          </div>
-          <div class="formation-item">
-            <h4>Escuela de JavaScript 2023 - De cero a Master en JavaScript</h4>
-            <h5>Julio 2023. 15.5 horas</h5>
-            <p><em>Udemy</em></p>
-          </div>
-
--->
         </div>
-
       </div>
     </section><!-- End Formation Section -->
 
@@ -280,69 +256,69 @@
       <div class="skills container">
 
         <div class="section-title">
-          <h2>Habilidades</h2>
-          <p>Las habilidades son las llaves que nos abren las puertas del éxito. Con ellas, podemos alcanzar nuestros
+          <h2 data-i18n='skills_title'>Habilidades</h2>
+          <p data-i18n='skills_paragraph'>Las habilidades son las llaves que nos abren las puertas del éxito. Con ellas, podemos alcanzar nuestros
             sueños, superar obstáculos y dejar nuestra marca en el mundo.</p>
 
-          <h3 class="skills-title">Aptitudes</h3>
+          <h3 class="skills-title" data-i18n='aptitudes_title'>Aptitudes</h3>
 
           <div class="row">
             <div class="col-lg-3 col-md-4">
               <div class="icon-box">
                 <img src="assets\img\icon_skills\brainstorm_color.png" alt="Teamwork">
-                <h3>Trabajo en equipo</h3>
+                <h3 data-i18n='teamwork'>Trabajo en equipo</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
               <div class="icon-box">
                 <img src="assets\img\icon_skills\learn.png" alt="Learn">
-                <h3>Ganas de aprender</h3>
+                <h3 data-i18n='learning'>Ganas de aprender</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
               <div class="icon-box">
                 <img src="assets\img\icon_skills\hierarchical-structure.png" alt="organization">
-                <h3>Organización</h3>
+                <h3 data-i18n='organization'>Organización</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
               <div class="icon-box">
                 <img src="assets\img\icon_skills\leadership.png" alt="leadership">
-                <h3>Liderazgo</h3>
+                <h3 data-i18n='leadership'>Liderazgo</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <img src="assets\img\icon_skills\idea.png" alt="initiative">
-                <h3>Iniciativa</h3>
+                <h3 data-i18n='initiative'>Iniciativa</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <img src="assets\img\icon_skills\creativity.png" alt="proactive">
-                <h3>Proactividad</h3>
+                <h3 data-i18n='proactivity'>Proactividad</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <img src="assets\img\icon_skills\adaptation.png" alt="adaptation">
-                <h3>Adaptabilidad</h3>
+                <h3 data-i18n='adaptability'>Adaptabilidad</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <img src="assets\img\icon_skills\conversation.png" alt="comunication">
-                <h3>Comunicación</h3>
+                <h3 data-i18n='communication'>Comunicación</h3>
               </div>
             </div>
           </div>
           <br>
-          <h3 class="skills-title">Conocimientos</h3>
+          <h3 class="skills-title" data-i18n='knowledge_title'>Conocimientos</h3>
 
           <div class="section-container">
             <!-- Lenguajes de Programación -->
             <div class="section">
-              <h3>Lenguajes de Programación</h3>
+              <h3 data-i18n='programming_languages'>Lenguajes de Programación</h3>
               <div class="row">
                 <div class="col col-graph">
                   <div class="content2">
@@ -383,7 +359,7 @@
           
             <!-- Desarrollo Web -->
             <div class="section">
-              <h3>Desarrollo Web</h3>
+              <h3 data-i18n='web_technologies'>Desarrollo Web</h3>
               <div class="row">
                 <div class="col col-graph">
                   <div class="content2">
@@ -424,7 +400,7 @@
                    
             <!-- Bases de Datos -->
             <div class="section">
-              <h3>Bases de Datos</h3>
+              <h3 data-i18n='databases'>Bases de Datos</h3>
               <div class="row">
                 <div class="col col-graph">
                   <div class="content2">
@@ -462,7 +438,7 @@
 
              <!-- Frameworks y Librerías -->
             <div class="section">
-              <h3>Frameworks y Librerías</h3>
+              <h3 data-i18n='frameworks'>Frameworks y Librerías</h3>
               <div class="row">
                 <div class="col col-graph">
                   <div class="content2">
@@ -492,7 +468,7 @@
             </div>
             <!-- Otras tecnologías -->
             <div class="section">
-              <h3>Otras tecnologías</h3>
+              <h3 data-i18n='other_tools'>Otras tecnologías</h3>
               <div class="row">
                 <div class="col col-graph">
                   <div class="content2">
@@ -524,14 +500,14 @@
 
             <!-- Idiomas -->
             <div class="section">
-              <h3>Idiomas</h3>
+              <h3 data-i18n='languages'>Idiomas</h3>
               <div class="row">
                 <div class="col col-graph">
                   <div class="content2">
                     <div class="image-container">
                       <img src="assets\img\icon_knowledge\spain.png" alt="spain">
                     </div>
-                    <p>Nativo</p>
+                    <p data-i18n='native_language'>Nativo</p>
                   </div>
                 </div>
                 <div class="col col-graph">
@@ -554,17 +530,17 @@
           <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-              <h2>Portfolio</h2>
-              <p>El éxito no es algo que se consigue, sino algo que se construye.</p>
+              <h2 data-i18n='portfolio_title'>Portfolio</h2>
+              <p data-i18n='portfolio_subtitle'>El éxito no es algo que se consigue, sino algo que se construye.</p>
             </div>
 
             <div class="row">
               <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
                 <ul id="portfolio-flters">
-                  <li data-filter="*" class="filter-active">TODOS</li>
-                  <li data-filter=".filter-app">APP MÓVIL</li>
-                  <li data-filter=".filter-card">DesarrollO WEB</li>
-                  <li data-filter=".filter-web">ESCRITORIO</li>
+                  <li data-filter="*" class="filter-active" data-i18n='all'>TODOS</li>
+                  <li data-filter=".filter-app" data-i18n='mobile_app'>APP MÓVIL</li>
+                  <li data-filter=".filter-card" data-i18n='web_development'>DesarrollO WEB</li>
+                  <li data-filter=".filter-web" data-i18n='desktop'>ESCRITORIO</li>
                 </ul>
               </div>
             </div>
@@ -577,7 +553,7 @@
                   <img src="assets/img/portfolio/signalScan.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>SignalScan</h4>
-                    <p>App móvil</p>
+                    <p data-i18n='mobile_app2'>App móvil</p>
                     <div class="portfolio-links">
                       <a href="portfolio-details.html?proyecto=signalScan" class="portfolio-details-lightbox"
                         data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -592,7 +568,7 @@
                   <img src="assets/img/portfolio/IPOkemon.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>IPOkemon</h4>
-                    <p>ESCRITORIO</p>
+                    <p data-i18n='desktop2'>ESCRITORIO</p>
                     <div class="portfolio-links">
                       <a href="portfolio-details.html?proyecto=IPOkemon" class="portfolio-details-lightbox"
                         data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -607,7 +583,7 @@
                   <img src="assets/img/portfolio/pokemon.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>PokemonWartortle</h4>
-                    <p>ESCRITORIO</p>
+                    <p data-i18n='desktop3'>ESCRITORIO</p>
                     <div class="portfolio-links">
                       <a href="portfolio-details.html?proyecto=pokemon" class="portfolio-details-lightbox"
                         data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -622,7 +598,7 @@
                   <img src="assets/img/portfolio/GSIFinanzas.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>GSI Finanzas</h4>
-                    <p>App móvil</p>
+                    <p data-i18n='mobile_app3'>App móvil</p>
                     <div class="portfolio-links">
                       <a href="portfolio-details.html?proyecto=gsiFinanzas" class="portfolio-details-lightbox"
                         data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -659,8 +635,8 @@
         <section id="contact" class="contact">
           <div class="container" data-aos="fade-up">
             <div class="section-title">
-              <h2>Contacto</h2>
-              <p>¡Ponte en contacto conmigo!</p>
+              <h2 data-i18n='contact_title'>Contacto</h2>
+              <p data-i18n='contact_subtitle'>¡Ponte en contacto conmigo!</p>
             </div>
 
             <div class="row mt-1 justify-content-center">
@@ -671,8 +647,8 @@
                       <i class="bi bi-geo-alt"></i>
                     </a>
                     <div class="address">
-                      <h4>Ubicación:</h4>
-                      <p>Ciudad Real, España</p>
+                      <h4 data-i18n='location'>Ubicación:</h4>
+                      <p data-i18n='CR_location'>Ciudad Real, España</p>
                     </div>
                   </div>
                 </a>
@@ -685,7 +661,7 @@
                       <i class="bi bi-envelope"></i>
                     </a>
                     <div class="address">
-                      <h4>Correo electrónico:</h4>
+                      <h4 data-i18n='email_contact'>Correo electrónico:</h4>
                       <p>gvraul8@gmail.com</p>
                     </div>
                   </div>
@@ -707,14 +683,14 @@
       <div class="logo">
         <img src="assets\img\logo-icon.png" alt="Logo"  alt="Logo de Raul Gonzalez">
       </div>
-      <h3>Raúl González Velázquez</h3>
+      <h3 data-i18n='footer'>Raúl González Velázquez</h3>
       <div class="social-links">
-        <a href="https://linkedin.com/in/gvraul8" class="linkedin" target="_blank" title="Perfil de LinkedIn de Raúl González"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/gvraul8" class="github" target="_blank" title="Perfil de GitHub de Raúl González"><i class="bx bxl-github"></i></a>
-        <a href="mailto:gvraul8@gmail.com" class="email" title="Contactar con Raúl González"><i class="bi bi-envelope"></i></a>
+        <a data-i18n='linkedin2' href="https://linkedin.com/in/gvraul8" class="linkedin" target="_blank" title="Perfil de LinkedIn de Raúl González"><i class="bx bxl-linkedin"></i></a>
+        <a data-i18n='github2' href="https://github.com/gvraul8" class="github" target="_blank" title="Perfil de GitHub de Raúl González"><i class="bx bxl-github"></i></a>
+        <a data-i18n='email2' href="mailto:gvraul8@gmail.com" class="email" title="Contactar con Raúl González"><i class="bi bi-envelope"></i></a>
         <div class="copyright">
           <br>
-          &copy; Copyright <strong><span>2023</span></strong>
+          &copy; Copyright <strong><span>2024</span></strong>
         </div>
       </div>
   </footer><!-- End Footer -->
@@ -737,6 +713,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/portfolio-details.js"></script>
+  <script src="assets/js/translates.js"></script>
+
 
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCGG3PJT" height="0" width="0"

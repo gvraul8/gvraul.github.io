@@ -1,41 +1,40 @@
+function obtenerIdioma() {
+  return localStorage.getItem("language") || "es";
+}
+
 function obtenerParametroURL(nombre) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(nombre);
 }
 
-// Función para mostrar detalles del proyecto
-function mostrarDetalles(titulo, descripcion, imagenes, githubLink) {
-  // Actualiza el contenido de los elementos con los datos del proyecto
+function mostrarDetalles(tituloKey, imagenes, githubLink) {
+  const idioma = obtenerIdioma();
+  const t = traducciones[idioma];
+
+  const titulo = t.proyectos[tituloKey].titulo;
+  const descripcion = t.proyectos[tituloKey].descripcion;
+
   document.getElementById("portfolio-title").innerText = titulo;
   document.getElementById("portfolio-description").innerText = descripcion;
 
-  // Limpia las imágenes existentes en el slider
-  var slider = document.querySelector(
-    ".portfolio-details-slider .swiper-wrapper"
-  );
+  const slider = document.querySelector(".portfolio-details-slider .swiper-wrapper");
   slider.innerHTML = "";
 
-  // Agrega las nuevas imágenes al slider
   imagenes.forEach(function (imagen) {
-    var slide = document.createElement("div");
+    const slide = document.createElement("div");
     slide.className = "swiper-slide";
-    var img = document.createElement("img");
+    const img = document.createElement("img");
     img.src = imagen;
     slide.appendChild(img);
     slider.appendChild(slide);
   });
 
-  // Actualiza el enlace "Ver en GitHub" con la URL proporcionada
-  var githubLinkElement = document.getElementById("github-link");
+  const githubLinkElement = document.getElementById("github-link");
   githubLinkElement.href = githubLink;
-  githubLinkElement.textContent = "Ver en GitHub   "; // Cambiado el texto del enlace
+  githubLinkElement.textContent = t.githubLink;
 
-  // Aplica las clases de estilo al enlace "Ver en GitHub"
-  githubLinkElement.classList.add("download-button"); // Agregado el estilo
-
-  // Añade el icono de GitHub al final del enlace
-  var githubIcon = document.createElement("i");
-  githubIcon.className = "bi bi-github"; // Clases de Bootstrap para el icono de GitHub
+  const githubIcon = document.createElement("i");
+  githubIcon.className = "bi bi-github";
   githubLinkElement.appendChild(githubIcon);
 
   // Inicializa el slider
@@ -49,12 +48,8 @@ function mostrarDetalles(titulo, descripcion, imagenes, githubLink) {
   });
 }
 
-// Estructura de datos para almacenar información de proyectos
 const proyectos = {
   signalScan: {
-    titulo: "SignalScan",
-    descripcion:
-      "Aplicación móvil realizada con Flutter que se especializa en la identificación y análisis de señales de tráfico, brindando a los usuarios una herramienta eficaz para comprender y gestionar la información vial de manera práctica y sencilla. Proyecto realizado en colaboración con Laura Fernández.",
     imagenes: [
       "assets/img/portfolio/signalScan1.png",
       "assets/img/portfolio/signalScan2.png",
@@ -63,8 +58,6 @@ const proyectos = {
     githubLink: "https://github.com/gvraul8/signalscan",
   },
   IPOkemon: {
-    titulo: "IPOkemon",
-    descripcion: "Aplicación de escritorio con Visual Studio Code utilizando UWP y C# para crear una simulación del juego Pokemón, en el cuál se ha implementado una pokédex y  un sistema de combate. Proyecto realizado en colaboración con Pablo Porrero y Joaquín Sierra.",
     imagenes: [
       "assets/img/portfolio/IPOkemon.png",
       "assets/img/portfolio/IPOkemon1.png",
@@ -73,8 +66,6 @@ const proyectos = {
     githubLink: "https://github.com/gvraul8/IPOkemon_grupal",
   },
   pokemon: {
-    titulo: "Pokemon Wartortle",
-    descripcion: "Aplicación de escritorio con Visual Studio Code utilizando UWP para crear un Pokémon, en este caso, Wartortle, en la cuál se han representado algunas animaciones de ataque, defensa o curaciones para una experiencia más dinámica y atractiva.",
     imagenes: [
       "assets/img/portfolio/wartortle1.png",
       "assets/img/portfolio/wartortle2.png",
@@ -83,8 +74,6 @@ const proyectos = {
     githubLink: "https://github.com/gvraul8/PokemonWartortle",
   },
   gsiFinanzas: {
-    titulo: "GSI Finanzas",
-    descripcion: "Aplicación de escritorio con Visual Studio Code utilizando UWP para crear un Pokémon, en este caso, Wartortle, en la cuál se han representado algunas animaciones de ataque, defensa o curaciones para una experiencia más dinámica y atractiva.",
     imagenes: [
       "assets/img/portfolio/gsi_finanzas1.png",
       "assets/img/portfolio/gsi_finanzas2.png",
@@ -93,8 +82,6 @@ const proyectos = {
     githubLink: "https://github.com/gvraul8/gsi_finanzas",
   },
   ESItravel: {
-    titulo: "ESI Travel",
-    descripcion: "Aplicación web realizada con HTML y CSS para el front-end y Python para el back-end, en la cuál se ha implementado un sistema de registro y login para los usuarios, así como un sistema de reservas de vuelos y hoteles, obteniendo los datos de dos APIs. Proyecto realizado en colaboración con Pedro Campos y Raúl Calzado.",
     imagenes: [
       "assets/img/portfolio/ESITravel.png",
       "assets/img/portfolio/ESITravel2.png",
@@ -104,16 +91,66 @@ const proyectos = {
   },
 };
 
-// Obtén el parámetro "proyecto" de la URL
+const traducciones = {
+  es: {
+    githubLink: "Ver en GitHub",
+    proyectos: {
+      signalScan: {
+        titulo: "SignalScan",
+        descripcion: "Aplicación móvil realizada con Flutter para análisis de señales de tráfico.",
+      },
+      IPOkemon: {
+        titulo: "IPOkemon",
+        descripcion: "Aplicación de escritorio simulando un juego de Pokémon con pokédex y combates.",
+      },
+      pokemon: {
+        titulo: "Pokemon Wartortle",
+        descripcion: "Aplicación de escritorio con animaciones dinámicas para Wartortle.",
+      },
+      gsiFinanzas: {
+        titulo: "GSI Finanzas",
+        descripcion: "Aplicación móvil para la gestión financiera personal.",
+      },
+      ESItravel: {
+        titulo: "ESI Travel",
+        descripcion: "Aplicación web para reservas de vuelos y hoteles con sistema de login.",
+      },
+    },
+  },
+  en: {
+    githubLink: "View on GitHub",
+    proyectos: {
+      signalScan: {
+        titulo: "SignalScan",
+        descripcion: "Mobile app built with Flutter for traffic signal analysis.",
+      },
+      IPOkemon: {
+        titulo: "IPOkemon",
+        descripcion: "Desktop app simulating a Pokémon game with pokédex and battles.",
+      },
+      pokemon: {
+        titulo: "Pokemon Wartortle",
+        descripcion: "Desktop app with dynamic animations for Wartortle.",
+      },
+      gsiFinanzas: {
+        titulo: "GSI Finanzas",
+        descripcion: "Mobile app for personal financial management.",
+      },
+      ESItravel: {
+        titulo: "ESI Travel",
+        descripcion: "Web app for booking flights and hotels with a login system.",
+      },
+    },
+  },
+};
+
 const proyectoSeleccionado = obtenerParametroURL("proyecto");
 
-// Lógica para seleccionar y mostrar el proyecto correspondiente
 if (proyectoSeleccionado && proyectos[proyectoSeleccionado]) {
   const proyecto = proyectos[proyectoSeleccionado];
   mostrarDetalles(
-    proyecto.titulo,
-    proyecto.descripcion,
+    proyectoSeleccionado,
     proyecto.imagenes,
     proyecto.githubLink
   );
-} 
+}

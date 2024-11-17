@@ -1,0 +1,85 @@
+{
+  "home": "Inicio",
+  "about": "Sobre mí",
+  "education": "Formación",
+  "skills": "Habilidades",
+  "portfolio": "Portfolio",
+  "contact_ico": "Contacto",
+  
+  "hero_title": "Raúl González Velázquez",
+  "hero_description": "Soy",
+  "hero_description_typed": "Ingeniero Informático",
+  "download_cv": "Descargar mi CV",
+  "linkedin": "Perfil de LinkedIn",
+  "github": "Perfil de GitHub",
+  "email": "Correo electrónico de Raúl González",
+  
+  "about_title": "Sobre mí",
+  "about_paragraph": "¡Hola! Soy Raúl González Velázquez, graduado en el grado de Ingeniería Informática en la <a href=\"https://esi.uclm.es/\" class=\"link\" target=\"_blank\">Escuela Superior de Informática de Ciudad Real</a>, perteneciente a la <a href=\"https://www.uclm.es/\" class=\"link\" target=\"_blank\">Universidad de Castilla-La Mancha</a>, la cual cuenta con el <a href=\"https://esi.uclm.es/index.php/sello-de-calidad-euro-inf/\" class=\"link\" target=\"_blank\">sello de calidad EURO-INF.</a>",
+  "about_subtitle": "Intensificación en Tecnologías de la Información",
+  "about_description": "Durante mi formación, he adquirido una sólida base en diferentes áreas de la informática. Mis principales habilidades se centran en el desarrollo de software. Además, me considero una persona apasionada por el aprendizaje y el crecimiento personal. Constantemente busco nuevas oportunidades para adquirir conocimientos y mejorar mis habilidades. Disfruto trabajando en equipo y colaborando con otros para alcanzar objetivos comunes.",
+  
+  "date": "Fecha de nacimiento",
+  "city": "Ciudad",
+  "birthdate": "27 de agosto de 2002",
+  "cityCR": "Ciudad Real, España",
+  "contact": "Contáctame",
+
+  "formation_title": "Formación",
+  "formation": "Formación",
+  "degree_title": "Grado en Ingeniería Informática",
+  "degree_university": "Universidad de Castilla-La Mancha, España",
+  "degree_description": "Grado en Ingeniería Informática en el <a href=\"https://esi.uclm.es/\" class=\"link\" target=\"_blank\" data-i18n=\"campus\">campus de Ciudad Real de la Universidad de Castilla-La Mancha</a>, con intensificación en Tecnologías de la Información.",
+  
+  "highschool_title": "Bachillerato Tecnológico",
+  "highschool_modality": "Modalidad de Ciencias y Tecnología",
+  
+  "professional_experience": "Experiencia Profesional",
+  "software_developer": "Desarrollador de Software Junior",
+  "date_gs_1": "Ago 2024 - Act.",
+  "task_1": "Desarrollo de características para proyectos de la empresa",
+  "task_2": "Mejora de procesos utilizando tecnologías como Node, React, Kafka y MongoDB",
+  "task_3": "Participación en todo el ciclo de desarrollo de software (front-end y back-end)",
+  
+  "full_stack_intern": "Desarrollador Full-stack (Prácticas)",
+  "program_description": "Realización del programa FORTE (prácticas curriculares + tesis) en <a href=\"https://www.globalsuitesolutions.com/es/\" class=\"link\" target=\"_blank\">GlobalSuite Solutions</a>",
+  "backend_development": "Desarrollo de back-end con Node y NestJS",
+  "frontend_development": "Desarrollo de front-end con React y NextJS",
+  "tech_stack": "Uso de tecnologías como Kafka, GitLab y bases de datos NoSQL como MongoDB",
+  
+  "full_stack_intern_2": "Desarrollador Full-stack",
+  
+  "ecommerce_description": "Prácticas extracurriculares en una reconocida empresa de comercio electrónico dedicada a la fabricación de artículos de descanso <a href=\"https://ventadecolchones.com/\" class=\"link\" target=\"_blank\" data-i18n=\"ecommerce_link\">(ventadecolchones.com)</a>.",
+  "backend_php_java": "Desarrollo de back-end con PHP y Java",
+  "frontend_tech": "Uso de tecnologías front-end como HTML, CSS, JavaScript, jQuery",
+  "database_queries": "Escritura de consultas optimizadas para bases de datos relacionales (MySQL)",
+  
+  "certificates_title": "Certificados",
+  "english_level": "Nivel de inglés B1",
+  
+  "volunteering_title": "Voluntariado",
+  "afal_volunteering": "AFAL Bolaños",
+  "afal_date": "Ene 2024 - Act.",
+  "volunteering_description": "Desarrollo activo y colaboración en el mantenimiento y actualización de funciones para la solución web de la Asociación de Familiares de Personas con Alzheimer y otras Demencias <a href=\"https://afalbolanos.es/\" class=\"link\" target=\"_blank\">AFAL Bolaños</a>",
+
+  "skills_title": "Habilidades",
+  "skills_paragraph": "Las habilidades son las llaves que nos abren las puertas del éxito. Con ellas, podemos alcanzar nuestros sueños, superar obstáculos y dejar nuestra marca en el mundo.",
+  "aptitudes_title": "Aptitudes",
+  "teamwork": "Trabajo en equipo",
+  "learning": "Ganas de aprender",
+  "organization": "Organización",
+  "leadership": "Liderazgo",
+  "initiative": "Iniciativa",
+  "proactivity": "Proactividad",
+  "adaptability": "Adaptabilidad",
+  "communication": "Comunicación",
+  "knowledge_title": "Conocimientos",
+  "programming_languages": "Lenguajes de Programación", 
+  "web_technologies": "Tecnologías Web",
+  "databases": "Bases de Datos",
+  "frameworks": "Frameworks y Librerías",
+  "other_tools": "Otras Herramientas",
+  "languages": "Idiomas",
+  "native_language": "Nativo"
+
+}
