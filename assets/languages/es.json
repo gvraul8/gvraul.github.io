@@ -80,6 +80,19 @@
   "frameworks": "Frameworks y Librerías",
   "other_tools": "Otras Herramientas",
   "languages": "Idiomas",
-  "native_language": "Nativo"
+  "native_language": "Nativo",
+
+  "portfolio_title": "Portfolio",
+  "portfolio_subtitle": "El éxito no es algo que se logra, sino algo que se construye.",
+  "all": "TODOS",
+  "mobile_app": "APLICACIÓN MÓVIL",
+  "web_development": "DESARROLLO WEB",
+  "desktop": "ESCRITORIO",
+
+  "contact_title": "Contacto",
+  "contact_subtitle": "¡Ponte en contacto conmigo!", 
+  "location": "Ubicación",
+  "CR_location": "Ciudad Real, España",
+  "email_contact": "Correo electrónico"
 
 }
