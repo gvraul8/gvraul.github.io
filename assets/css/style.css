@@ -613,11 +613,6 @@ section {
   }
 }
 
-
-
-
-
-
 .skills .icon-box {
   display: flex;
   align-items: center;
@@ -852,6 +847,10 @@ body {
 
 #formation .link {
   color: #0563bb;
+}
+
+#formation .row>* {
+  padding-left: calc(var(--bs-gutter-x)* 1.5);
 }
 
 /*--------------------------------------------------------------
