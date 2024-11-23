@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   let currentLang = localStorage.getItem("language") || "es";
   const languageButton = document.getElementById("language-dropdown");
+  const downloadLink = document.getElementById("downloadCV");
   const languages = {
     es: { name: "ES", flag: "spain.png" },
     en: { name: "EN", flag: "United-kingdom.png" },
@@ -12,7 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
     languageButton.setAttribute("data-lang", lang);
   }
 
+  function updateDownloadLink(lang) {
+    const selectedLang = languages[lang];
+    downloadLink.href = `CV_RaulGonzalez_${selectedLang.name}.pdf`;
+  }
+
   updateLanguageButton(currentLang);
+  updateDownloadLink(currentLang);
 
   async function loadTranslations(lang) {
     try {
@@ -193,6 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const lang = e.target.getAttribute("data-lang");
       localStorage.setItem("language", lang);
       changeLanguage(lang);
+      updateDownloadLink(lang);
     });
   });
 });
